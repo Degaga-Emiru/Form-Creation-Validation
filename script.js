@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const messages = [];
 
         // Username validation
-        if (usernameValue.length < 3) {
+        if (username.length < 3) {
             isValid = false;
             messages.push("Username must be at least 3 characters long.");
         }
 
         // Email validation
-        if (!emailValue.includes("@") || !emailValue.includes(".")) {
+        if (!email.includes("@") || !emailValue.includes(".")) {
             isValid = false;
             messages.push("Please enter a valid email address.");
         }
 
         // Password validation
-        if (passwordValue.length < 8) {
+        if (password.length < 8) {
             isValid = false;
             messages.push("Password must be at least 8 characters long.");
         }
