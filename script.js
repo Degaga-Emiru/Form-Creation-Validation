@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Display feedback
-        feedbackDiv.style.display = "block";
+       feedbackDiv.style.display = "block";
 
 if (isValid) {
     feedbackDiv.textContent = "Registration successful!";
     feedbackDiv.style.color = "#28a745"; // Green color
 } else {
-    feedbackDiv.innerHTML = messages.map(msg => `<p>${msg}</p>`).join(""); // Convert messages into <p> elements
+    feedbackDiv.innerHTML = messages.join("<br>"); // Join messages with <br>
     feedbackDiv.style.color = "#dc3545"; // Red color
 }
    
